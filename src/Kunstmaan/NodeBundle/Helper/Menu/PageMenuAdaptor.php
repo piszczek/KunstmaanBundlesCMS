@@ -97,7 +97,7 @@ class PageMenuAdaptor implements MenuAdaptorInterface
         } elseif (stripos($request->attributes->get('_route'), 'KunstmaanNodeBundle_nodes') === 0) {
             $treeNodes     = $this->getTreeNodes(
                 $request->getLocale(),
-                PermissionMap::PERMISSION_VIEW,
+                PermissionMap::PERMISSION_EDIT,
                 $this->aclNativeHelper,
                 true
             );
